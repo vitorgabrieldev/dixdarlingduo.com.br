@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+.container {
+    display: block;
+}
+
+.container > header {
+    padding-bottom: 2rem;
+}
+
+.title {
+    color: #E60712;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 63.92px;
+    letter-spacing: -0.36px;
+}
+
+.title > * {
+    font-weight: 900;
+    user-select: none;
+}
+
+.form > form {
+    display: grid;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.form > form > span {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 63.92px;
+    letter-spacing: -0.24px;
+    user-select: none;
+}
+
+.form > form > input {
+    width: 386px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 3px solid #E60712;
+    text-align: center;
+    font-size: 2rem;
+    color: #636363;
+    outline: none;   
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.form > form > input::placeholder {
+    color: #E3E3E3;
+    font-weight: 900;
+}
+
+.form > form > div {
+    display: grid;
+    align-items: center;
+}
+
+.form > form > div > button {
+    width: 386px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E60712;
+    border: none;
+    color: #fefefe;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.form > form > div > a {
+    color: #807e7e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 63.92px;
+    letter-spacing: -0.14px;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width : 500px) {
+    .form > form > div > button,
+    .form > form > input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .form > form > div > button,
+    .form > form > input {
+        width: 250px;
+    }
+}
